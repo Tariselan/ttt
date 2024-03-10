@@ -10,8 +10,21 @@ table {
     border-collapse: collapse;
 }
 
-td {
+td, th {
     width: 20px;
     height: 20px;
     border: 1px solid black;
+    text-align: center;
+}
+
+th {
+    background-color: #333;
+    color: #EEE;
+}
+
+tr:nth-child(odd) > td {
+    background-color: rgb(236, 255, 159);
+}
+tr:nth-child(even) > td {
+    background-color: rgb(160, 255, 241);
 }
